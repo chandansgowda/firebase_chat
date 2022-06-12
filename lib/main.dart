@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Firebase Chat",
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.pink
+      ),
       home: ChatScreen(),
     );
   }
